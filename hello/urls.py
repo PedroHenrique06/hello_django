@@ -19,6 +19,10 @@ from django.urls import path
 from core import views
 
 urlpatterns = [
+    # Não precisa ter o mesmo nome na url e na função
     path('admin/', admin.site.urls),
-    path('hello/', views.hello)
+    path('hello/', views.hello),
+    path('sum/<int:x>/<int:y>', views.sum),
+    path('multi/<int:x>/<int:y>', views.multi),
+    path('div/<int:x>/<int:y>', views.div)
 ]
