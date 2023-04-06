@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', views.hello),
     path('sum/<int:x>/<int:y>', views.sum),
+    path('sub/<int:x>/<int:y>', views.sub),
     path('multi/<int:x>/<int:y>', views.multi),
     path('div/<int:x>/<int:y>', views.div)
 ]
